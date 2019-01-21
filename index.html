@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body class="index-page">
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-top">
+          <div class="container"><a class="logo" href="#" style="background-image: url('static/images/general/logo.png');"></a>
+            <div class="contacts header-contacts">
+              <div class="contacts__phone header-contacts__phone">
+                <svg class="svg-sprite-icon icon-phone contacts__icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+                </svg><a class="contacts__link header-contacts__link" href="tel:+380675585223">(067) 558-52-23</a>
+              </div>
+              <div class="contacts__shop-opening-hours">
+                <svg class="svg-sprite-icon icon-time contacts__icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#time"></use>
+                </svg><span class="contacts__shop-text header-contacts__shop-text">График работы: с 10.00 до 20.00</span>
+              </div>
+            </div>
+            <h1 class="trademark"> <a class="trademark-link" href="#">ТМ «MatroLuxe»</a></h1>
+          </div>
+        </div>
+        <div class="header-main">
+          <div class="container">
+            <button class="btn-toggle" id="menu-toggle">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </button>
+            <div class="burger-menu">
+              <div class="burger-menu__list">
+                <div class="burger-menu__item"><a class="burger-menu__link" href="#">Главная</a></div>
+                <div class="burger-menu__item" id="open-submenu"><a class="burger-menu__link" href="#">Магазины</a>
+                  <svg class="svg-sprite-icon icon-arrow-up burger-menu__icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-up"></use>
+                  </svg>
+                  <div class="burger-submenu">
+                    <div class="burger-submenu__item">Киев «MatroLuxe», ул. Беломорская, 2</div>
+                    <div class="burger-submenu__item">Днепр «MatroLuxe» пр. Александра Поля, 96</div>
+                    <div class="burger-submenu__item">Днепр «MatroLuxe» пр. Александра Поля, 96</div>
+                    <div class="burger-submenu__item">Днепр «MatroLuxe» пр. Александра Поля, 97а</div>
+                  </div>
+                </div>
+                <div class="burger-menu__item"><a class="burger-menu__link" href="#">Акции и скидки</a></div>
+                <div class="burger-menu__item"><a class="burger-menu__link" href="#">Каталоги</a></div>
+                <div class="burger-menu__item"><a class="burger-menu__link" href="#">Наши гарантии</a></div>
+                <div class="burger-menu__item"><a class="burger-menu__link" href="#">Наша компания</a></div>
+              </div>
+            </div><a class="logo header__logo" href="#" style="background-image: url('static/images/general/logo.png');"></a>
+            <nav class="nav-menu header__nav-menu">
+              <div class="nav-menu__item"><a class="nav-menu__link active" href="index.html">Главная</a></div>
+              <div class="nav-menu__item nav-menu__item--hover"><a class="nav-menu__link" href="#">Магазины</a>
+                <div class="dropdown-menu">
+                  <div class="dropdown-menu__list">
+                    <div class="dropdown-menu__item">
+                      <svg class="svg-sprite-icon icon-arrow-right dropdown-menu__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-right"></use>
+                      </svg><a class="dropdown-menu__link" href="#">Киев «MatroLuxe», ул. Беломорская, 2</a>
+                    </div>
+                    <div class="dropdown-menu__item">
+                      <svg class="svg-sprite-icon icon-arrow-right dropdown-menu__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-right"></use>
+                      </svg><a class="dropdown-menu__link" href="#">Днепр «MatroLuxe» пр. Александра Поля, 97а</a>
+                    </div>
+                    <div class="dropdown-menu__item">
+                      <svg class="svg-sprite-icon icon-arrow-right dropdown-menu__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-right"></use>
+                      </svg><a class="dropdown-menu__link" href="#">Днепр «MatroLuxe» пр. Александра Поля, 96</a>
+                    </div>
+                    <div class="dropdown-menu__item">
+                      <svg class="svg-sprite-icon icon-arrow-right dropdown-menu__icon">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-right"></use>
+                      </svg><a class="dropdown-menu__link" href="#">Днепр «MatroLuxe» пр. Александра Поля, 96</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="nav-menu__item"><a class="nav-menu__link" href="#">Акции и скидки</a></div>
+              <div class="nav-menu__item"><a class="nav-menu__link" href="#">Каталоги</a></div>
+              <div class="nav-menu__item"><a class="nav-menu__link" href="#">Гарантия</a></div>
+              <div class="nav-menu__item"><a class="nav-menu__link" href="#">Наша компания</a></div>
+            </nav>
+            <form class="search header-main__search">
+              <input class="search__field" type="text" placeholder="Поиск">
+              <button class="search__btn">
+                <svg class="svg-sprite-icon icon-search search__icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <section class="banner">
+          <div class="container"><img class="banner__image" src="static/images/content/banner/banner.jpg" srcset="static/images/content/banner/banner2x.jpg 2x" alt="Баннер"></div>
+        </section>
+        <section class="about">
+          <div class="container">
+            <div class="about-content">
+              <h2 class="section-title-h2">Мебельные магазины <br><span class="section-title-h2__accent">MatroLuxe<sup>ТМ</sup></span></h2>
+              <div class="info-block">
+                <p class="info-block__text about-content__text">Магазины мебели от производителя <br> ТМ «MatroLuxe» — единственная официальная розничная сеть компании-производителя <a class="info-block__link" href="#">ортопедических матрасов</a>, корпусной, <a class="info-block__link" href="#">мягкой </a>и бескаркасной мебели, а также аксессуаров для сна и отдыха.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="shops">
+          <div class="container">
+            <div class="shops-cards">
+              <div class="shops-card">
+                <div class="shops-card__img"><img src="static/images/content/adresses/shop-1.jpg" srcset="static/images/content/adresses/shop-1-2x.jpg 2x" alt="Shop photo"></div>
+                <h4 class="shops-card__title"> <a class="shops-card__link" href="#">Мебельный магазин «MatroLuxe»</a></h4>
+                <div class="contacts shops-card__contacts">
+                  <div class="contacts__location">
+                    <svg class="svg-sprite-icon icon-map contacts__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#map"></use>
+                    </svg><a class="contacts__link" href="#">Киев, ТЦ «Ваш Дом», (м. Лесная) ул. Беломорская 2;</a>
+                  </div>
+                  <div class="contacts__phone">
+                    <svg class="svg-sprite-icon icon-phone contacts__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+                    </svg><a class="contacts__link" href="tel:+380675585223">(067) 558-52-23</a>
+                  </div>
+                  <div class="contacts__shop-opening-hours">
+                    <svg class="svg-sprite-icon icon-time contacts__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#time"></use>
+                    </svg><span class="contacts__text">График работы: <span>с 10.00 до 20.00</span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="shops-card">
+                <div class="shops-card__img"><img src="static/images/content/adresses/shop-2.jpg" srcset="static/images/content/adresses/shop-2-2x.jpg 2x" alt="Shop photo"></div>
+                <h4 class="shops-card__title"> <a class="shops-card__link" href="#">Мебельный магазин «MatroLuxe»</a></h4>
+                <div class="contacts shops-card__contacts">
+                  <div class="contacts__location">
+                    <svg class="svg-sprite-icon icon-map contacts__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#map"></use>
+                    </svg><a class="contacts__link" href="#">Киев, ТЦ «Ваш Дом», (м. Лесная) ул. Беломорская 2;</a>
+                  </div>
+                  <div class="contacts__phone">
+                    <svg class="svg-sprite-icon icon-phone contacts__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+                    </svg><a class="contacts__link" href="tel:+380675585223">(067) 558-52-23</a>
+                  </div>
+                  <div class="contacts__shop-opening-hours">
+                    <svg class="svg-sprite-icon icon-time contacts__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#time"></use>
+                    </svg><span class="contacts__text">График работы: <span>с 10.00 до 20.00</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="matresses">
+          <div class="container">
+            <h3 class="section-title-h3 section-title-h3--white">Почувствуйте мягкость и комфорт матраса «Matroluxe»</h3><a class="section-btn" href="#">Подробнее</a>
+          </div>
+        </section>
+        <section class="shops">
+          <div class="container">
+            <div class="shops-cards">
+              <div class="shops-card">
+                <div class="shops-card__img"><img src="static/images/content/adresses/shop-1.jpg" srcset="static/images/content/adresses/shop-1-2x.jpg 2x" alt="Shop photo"></div>
+                <h4 class="shops-card__title"> <a class="shops-card__link" href="#">Мебельный магазин «MatroLuxe»</a></h4>
+                <div class="contacts shops-card__contacts">
+                  <div class="contacts__location">
+                    <svg class="svg-sprite-icon icon-map contacts__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#map"></use>
+                    </svg><a class="contacts__link" href="#">Киев, ТЦ «Ваш Дом», (м. Лесная) ул. Беломорская 2;</a>
+                  </div>
+                  <div class="contacts__phone">
+                    <svg class="svg-sprite-icon icon-phone contacts__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+                    </svg><a class="contacts__link" href="tel:+380675585223">(067) 558-52-23</a>
+                  </div>
+                  <div class="contacts__shop-opening-hours">
+                    <svg class="svg-sprite-icon icon-time contacts__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#time"></use>
+                    </svg><span class="contacts__text">График работы: <span>с 10.00 до 20.00</span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="shops-card">
+                <div class="shops-card__img"><img src="static/images/content/adresses/shop-2.jpg" srcset="static/images/content/adresses/shop-2-2x.jpg 2x" alt="Shop photo"></div>
+                <h4 class="shops-card__title"> <a class="shops-card__link" href="#">Мебельный магазин «MatroLuxe»</a></h4>
+                <div class="contacts shops-card__contacts">
+                  <div class="contacts__location">
+                    <svg class="svg-sprite-icon icon-map contacts__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#map"></use>
+                    </svg><a class="contacts__link" href="#">Киев, ТЦ «Ваш Дом», (м. Лесная) ул. Беломорская 2;</a>
+                  </div>
+                  <div class="contacts__phone">
+                    <svg class="svg-sprite-icon icon-phone contacts__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+                    </svg><a class="contacts__link" href="tel:+380675585223">(067) 558-52-23</a>
+                  </div>
+                  <div class="contacts__shop-opening-hours">
+                    <svg class="svg-sprite-icon icon-time contacts__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#time"></use>
+                    </svg><span class="contacts__text">График работы: <span>с 10.00 до 20.00</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="soft-furniture">
+          <div class="container">
+            <h3 class="section-title-h3">Мягкая мебель «Sofyno» <br> именно то, что нужно!</h3><a class="section-btn" href="#">Ознакомиться</a>
+          </div>
+        </section>
+        <section class="offer">
+          <div class="container">
+            <h3 class="section-title-h3">Акция! C Днём Рождения!</h3>
+            <div class="offer-content">
+              <div class="offer-content__banner"><img src="static/images/content/offer/offer-banner.jpg" srcset="static/images/content/offer/offer-banner2x.jpg 2x" alt="Offer"></div>
+              <div class="info-block">
+                <p class="info-block__text">Матрасы и мебель Вашей мечты со скидкой можно приобрести только в фирменных магазинах мебели и матрасов ТМ «MatroLuxe» с 1 декабря 2017 г. до 31 марта 2018 г.</p>
+                <p class="info-block__text">Ко дню рождения покупателя предоставляется скидка до 10% на любой товар. Скидка действует при наличии ксерокопии паспорта и в течение 30 дней (за 10 дней до даты рождения и 20 дней после даты рождения).</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="matresses-adv">
+          <div class="container">
+            <h3 class="section-title-h3 section-title-h3--white">Матрасы «Matroluxe» <br> Мы созданы друг для друга!</h3><a class="section-btn" href="#">Подробнее</a>
+          </div>
+        </section>
+        <section class="sales">
+          <div class="container">
+            <h2 class="section-title-h2">Акции и скидки <br><span class="section-title-h2__accent">MatroLuxe<sup>ТМ</sup></span></h2>
+            <div class="sales-list">
+              <div class="sales-item">
+                <div class="sales-img"><img src="static/images/content/sales/sales1.jpg" srcset="static/images/content/sales/sales1-2x.jpg 2x" alt="Sale"></div>
+                <h6 class="sales-title">Матрасы серии Romance от ТМ Матролюкс со скидкой 50%</h6>
+                <p class="sales-text">«Матролюкс» проводят выгодную акцию «Матрасы серии Romance от ТМ Матролюкс со скидкой 50%».</p>
+                <p class="sales-text">Серия ортопедических матрасов «ROMANCE» — это высокое европейское качество по доступным ценам, с гарантией от национального производителя на срок 10 лет!</p><a class="sales-link" href="#">Подробнее</a>
+              </div>
+              <div class="sales-item">
+                <div class="sales-img"><img src="static/images/content/sales/sales1.jpg" srcset="static/images/content/sales/sales1-2x.jpg 2x" alt="Sale"></div>
+                <h6 class="sales-title">Матрасы серии Romance от ТМ Матролюкс со скидкой 50%</h6>
+                <p class="sales-text">«Матролюкс» проводят выгодную акцию «Матрасы серии Romance от ТМ Матролюкс со скидкой 50%».</p>
+                <p class="sales-text">Серия ортопедических матрасов «ROMANCE» — это высокое европейское качество по доступным ценам, с гарантией от национального производителя на срок 10 лет!</p><a class="sales-link" href="#">Подробнее</a>
+              </div>
+              <div class="sales-item">
+                <div class="sales-img"><img src="static/images/content/sales/sales1.jpg" srcset="static/images/content/sales/sales1-2x.jpg 2x" alt="Sale"></div>
+                <h6 class="sales-title">Матрасы серии Romance от ТМ Матролюкс со скидкой 50%</h6>
+                <p class="sales-text">«Матролюкс» проводят выгодную акцию «Матрасы серии Romance от ТМ Матролюкс со скидкой 50%».</p>
+                <p class="sales-text">Серия ортопедических матрасов «ROMANCE» — это высокое европейское качество по доступным ценам, с гарантией от национального производителя на срок 10 лет!</p><a class="sales-link" href="#">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="sertificates">
+          <div class="container">
+            <h2 class="section-title-h2">Сертификаты качества <span class="section-title-h2__accent">MatroLuxe<sup>TM</sup></span></h2>
+            <div class="sertificates-wrap">
+              <button class="sertificates__btn sertificates__btn--prev">
+                <svg class="svg-sprite-icon icon-arrow-right sertificates__icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+              <button class="sertificates__btn sertificates__btn--next">
+                <svg class="svg-sprite-icon icon-arrow-right sertificates__icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+              <div class="sertificates-list sertificates-slider"><a class="sertificates-link" href="#"><img src="static/images/content/sertificate/sertificate1.jpg" srcset="static/images/content/sertificate/sertificate1-2x.jpg 2x" alt="Sertificate"></a><a class="sertificates-link" href="#"><img src="static/images/content/sertificate/sertificate2.jpg" srcset="static/images/content/sertificate/sertificate2-2x.jpg 2x" alt="Sertificate"></a><a class="sertificates-link" href="#"><img src="static/images/content/sertificate/sertificate3.jpg" srcset="static/images/content/sertificate/sertificate3-2x.jpg 2x" alt="Sertificate"></a><a class="sertificates-link" href="#"><img src="static/images/content/sertificate/sertificate4.jpg" srcset="static/images/content/sertificate/sertificate4-2x.jpg 2x" alt="Sertificate"></a></div>
+            </div>
+          </div>
+        </section>
+        <section class="king">
+          <div class="container">
+            <h2 class="section-title-h2">Матрасы премиум класса <br><span class="section-title-h2__action">King Mattresses</span></h2>
+          </div>
+          <div class="container"><img class="banner__image" src="static/images/content/king/king.jpg" srcset="static/images/content/king/king2x.jpg 2x" alt="Баннер"></div>
+        </section>
+        <section class="buy">
+          <div class="container">
+            <h2 class="section-title-h2">Магазины мебели<br>в <span class="section-title-h2__action">Киеве </span>и <span class="section-title-h2__action">Днепре</span></h2>
+            <div class="info-block">
+              <p class="info-block__text">Купить мебель <a class="info-block__link" href="#">ТМ «MatroLuxe» </a>Вы можете в сети наших фирменных магазинов мебели в Киеве и Днепре (Днепропетровск). Будем рады Вам помочь сделать свой дом более уютным, комфортным и стильным!</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="footer-main">
+          <div class="container">
+            <div class="footer-block">
+              <h6 class="footer-block__title">Адрес Производителя</h6><a class="trademark-link" href="#">ТМ "MatroLuxe" Украина</a>
+              <div class="contacts">
+                <div class="contacts__location">
+                  <svg class="svg-sprite-icon icon-map contacts__icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#map"></use>
+                  </svg><a class="contacts__link" href="#">Днепр, ул. Николая Руденка, 53</a>
+                </div>
+                <div class="contacts__phone">
+                  <svg class="svg-sprite-icon icon-phone contacts__icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+                  </svg><a class="contacts__link" href="tel:+380674607800">(067) 460-78-00</a>
+                </div>
+                <div class="contacts__shop-opening-hours">
+                  <svg class="svg-sprite-icon icon-time contacts__icon">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#time"></use>
+                  </svg><span class="contacts__text">Режим работы <br> Пн-Пт: 9.00-18.00 <br> Сб-Вс: 9:00-17:00</span>
+                </div>
+              </div><a class="logo" href="#"><img src="static/images/general/logo.png" srcset="static/images/general/logo2x.png 2x" alt="MatroLuxe"></a>
+            </div>
+            <div class="footer-block">
+              <h6 class="footer-block__title">Наши Магазины</h6>
+              <ul class="shops-list">
+                <li class="shops-item">
+                  <svg class="svg-sprite-icon icon-arrow-right shops-arrow">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-right"></use>
+                  </svg><a class="shops-link" href="#">Киев, Мебельный Магазин «MatroLuxe» ул.Беломорская, 2</a>
+                </li>
+                <li class="shops-item">
+                  <svg class="svg-sprite-icon icon-arrow-right shops-arrow">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-right"></use>
+                  </svg><a class="shops-link" href="#">Днепр, Магазин «MatroLuxe» пр.Александра Поля, 97а</a>
+                </li>
+                <li class="shops-item">
+                  <svg class="svg-sprite-icon icon-arrow-right shops-arrow">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-right"></use>
+                  </svg><a class="shops-link" href="#">Днепр, Магазин «MatroLuxe» пр.Александра Поля, 96</a>
+                </li>
+                <li class="shops-item">
+                  <svg class="svg-sprite-icon icon-arrow-right shops-arrow">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#arrow-right"></use>
+                  </svg><a class="shops-link" href="#">Днепр, Магазин «MatroLuxe» ул.Николая Руденка, 53</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-block news">
+              <h6 class="footer-block__title">Новости Компании</h6>
+              <div class="news-block"><a class="news-block__img" href="#"><img src="static/images/content/news/news1.jpg" srcset="static/images/content/news/news1-2x.jpg 2x" alt="Элитные ортопедические матрасы"></a>
+                <div class="news-block__info">
+                  <p class="news-block__text">Элитные ортопедические матрасы: преимущества и главные отличия.</p><a class="news-block__link" href="#">By matroluxe on <span class="news-block__date">Апр 10, 2018</span></a>
+                </div>
+              </div>
+              <div class="news-block"><a class="news-block__img" href="#"><img src="static/images/content/news/news1.jpg" srcset="static/images/content/news/news1-2x.jpg 2x" alt="Кровати"></a>
+                <div class="news-block__info">
+                  <p class="news-block__text">Разновидности кроватей и особенности характеров их хозяев.</p><a class="news-block__link" href="#">By matroluxe on <span class="news-block__date">Мар 29, 2018</span></a>
+                </div>
+              </div>
+              <div class="news-block"><a class="news-block__img" href="#"><img src="static/images/content/news/news1.jpg" srcset="static/images/content/news/news1-2x.jpg 2x" alt="Элитные ортопедические матрасы"></a>
+                <div class="news-block__info">
+                  <p class="news-block__text">Элитные ортопедические матрасы: преимущества и главные отличия.</p><a class="news-block__link" href="#">By matroluxe on <span class="news-block__date">Апр 10, 2018</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="footer-block facebook">
+              <h6 class="footer-block__title">Мы в Facebook</h6><a class="footer-facebook__link" href="#"> <img static/images/general/facebook-link.jpg srcset="static/images/general/facebook-link2x.jpg 2x" alt="Наша страница на Facebook"></a>
+            </div>
+            <div class="logo-wrap"><a class="logo" href="#"><img src="static/images/general/logo.png" srcset="static/images/general/logo2x.png 2x" alt="MatroLuxe"></a></div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <p class="copywright">Все права защищены | <a class="copywright-link" href="#">ТМ "MatroLuxe"&reg;</a></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
